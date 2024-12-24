@@ -35,12 +35,12 @@ export default async function Post({ params }) {
           <Link href={"/posts"}>Posts</Link>
         </nav>
       </header>
-      <section className='max-w-6xl w-full mx-auto flex flex-col gap-3 justify-center items-center h-40 rounded-xl mt-4 bg-blue-700 text-white'>
+      <section className='max-w-6xl w-full mx-auto px-2 text-center flex flex-col gap-3 justify-center items-center h-40 rounded-xl mt-4 bg-blue-700 text-white'>
 
         <h1 className='text-4xl font-bold'>{post.title}</h1>
       </section>
-      <section className='max-w-6xl w-full mx-auto mt-10 grid grid-cols-3 gap-6' >
-        <div className=' col-span-2'>{parse(post.content)}</div>
+      <section className='max-w-6xl w-full mx-auto mt-10 grid lg:grid-cols-3 gap-6 px-2 grid-cols-1' >
+        <div className=' lg:col-span-2 col-span-1'>{parse(post.content)}</div>
         <div className='w-ful h-full  border-l border-blue-950 text-right px-3'>
           <h3 className='font-semibold text-xl underline text-blue-700'>Autres Articles</h3>
         </div>

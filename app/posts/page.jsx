@@ -40,7 +40,7 @@ export default async function Posts() {
       <div className='max-w-6xl w-full mx-auto mt-10'>
         <h2 className='font-semibold text-2xl'>Tout les articles</h2>
       </div>
-      <ul className='max-w-6xl w-full mx-auto mt-10'>
+      <ul className='max-w-6xl w-full mx-auto my-10'>
         {posts.map((post) => (
           <li key={post.id} className="border border-1 rounded p-4 w-max"> 
           <Link href={`/posts/${post.slug}`} className="font-bold hover:underline">
